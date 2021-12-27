@@ -1,0 +1,9 @@
+{
+  "tags": {
+    "origin:sql_import": {},
+    "imported": {
+      "color": "#263238"
+    },
+    "postgres-local": {}
+  }
+}
