@@ -1,4 +1,5 @@
 {
+  "name": "fraud_service",
   "endpoints": [
     {
       "modelRef": "ScWGJkZ4",
@@ -12,7 +13,48 @@
         "shapleyBackgroundSize": 100
       },
       "mlFlowOutputStyle": "RAW",
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "transactions_unknown #1",
+          "q": {
+            "features": {
+              "transaction_id": 308112,
+              "purchase_date": "2018-02-23 17:46:18",
+              "purchase_date_parsed": "2018-02-23T17:46:18.000Z",
+              "purchase_year": 2018,
+              "purchase_month": 2,
+              "purchase_day": 23,
+              "purchase_dow": 5,
+              "purchase_weekend": 0,
+              "purchase_hour": 17,
+              "card_id": "C_ID_69812e3e2e",
+              "merchant_id": "M_ID_89ede51747",
+              "merchant_category_id": 298,
+              "item_category": "A",
+              "purchase_amount": 239.64,
+              "signature_provided": 0,
+              "card_first_active_month": "2015-12",
+              "card_first_active_month_parsed": "2015-12-01T00:00:00.000Z",
+              "days_active": 815,
+              "card_reward_program": "cash_back",
+              "card_latitude": 44.093,
+              "card_longitude": -72.588,
+              "card_fico_score": 436,
+              "card_age": 38,
+              "merchant_subsector_description": "insurance",
+              "merchant_latitude": 45.921,
+              "merchant_longitude": -119.619,
+              "merchant_location": "POINT(-119.619 45.921)",
+              "merchant_cardholder_distance": 2267.41,
+              "merchant_state": "Washington",
+              "merchant_state_enName": "Washington",
+              "card_location": "POINT(-72.588 44.093)",
+              "card_state": "Vermont",
+              "card_state_enName": "Vermont"
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -26,11 +68,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1640635247047
+    "lastModifiedOn": 1640635258484
   },
   "creationTag": {
     "versionNumber": 0,
