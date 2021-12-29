@@ -1,21 +1,60 @@
 {
   "displayName": "Compare 2 model versions from Prediction (RANDOM_FOREST_CLASSIFICATION) on transactions_known",
   "predictionType": "BINARY_CLASSIFICATION",
-  "comparedModels": [],
+  "comparedModels": [
+    {
+      "smartId": "S-*-ScWGJkZ4-initial",
+      "isSelected": true,
+      "color": "#1f77b4",
+      "isChampion": false
+    },
+    {
+      "smartId": "S-*-ScWGJkZ4-1640799580988",
+      "isSelected": true,
+      "color": "#ff7f0e",
+      "isChampion": false
+    }
+  ],
   "displayParams": {
-    "pinnedMetrics": [],
-    "yLabels": [],
+    "displayedMetrics": [
+      "ACCURACY",
+      "PRECISION",
+      "RECALL",
+      "F1",
+      "COST_MATRIX",
+      "LOG_LOSS",
+      "ROC_AUC",
+      "CALIBRATION_LOSS",
+      "CUMULATIVE_LIFT"
+    ],
+    "predictionType": "BINARY_CLASSIFICATION",
+    "pinnedMetrics": [
+      "ROC_AUC"
+    ],
+    "xLabel": "model:date",
+    "yLabels": [
+      "model:algorithm",
+      "evaluation:date",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
+    "sortColumn": "",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1640799598537
+    "lastModifiedOn": 1640799600604
   },
   "creationTag": {
     "versionNumber": 0,
