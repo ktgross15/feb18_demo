@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1640798073371
+    "lastModifiedOn": 1640798125207
   },
   "creationTag": {
     "versionNumber": 0,
@@ -126,27 +126,27 @@
         "type": "bigint"
       },
       {
-        "name": "card_first_active_month",
+        "name": "cardholder_first_active_month",
         "type": "string"
       },
       {
-        "name": "card_reward_program",
+        "name": "cardholder_reward_program",
         "type": "string"
       },
       {
-        "name": "card_latitude",
+        "name": "cardholder_latitude",
         "type": "double"
       },
       {
-        "name": "card_longitude",
+        "name": "cardholder_longitude",
         "type": "double"
       },
       {
-        "name": "card_fico_score",
+        "name": "cardholder_fico_score",
         "type": "bigint"
       },
       {
-        "name": "card_age",
+        "name": "cardholder_age",
         "type": "bigint"
       },
       {
