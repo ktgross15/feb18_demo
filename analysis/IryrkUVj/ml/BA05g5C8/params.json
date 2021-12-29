@@ -2384,7 +2384,7 @@
       "subsample": 0.9,
       "subsample_freq": 1,
       "use_bagging": false,
-      "enabled": true
+      "enabled": false
     },
     "xgboost": {
       "max_depth": {
