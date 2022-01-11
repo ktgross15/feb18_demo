@@ -8,6 +8,7 @@
     },
     "postgres-local": {
       "color": "#77bec2"
-    }
+    },
+    "recipe-editor": {}
   }
 }
