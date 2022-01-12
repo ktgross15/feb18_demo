@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1641952210991
+    "lastModifiedOn": 1641952263994
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,7 +59,7 @@
   "schema": {
     "columns": [
       {
-        "name": "col_0",
+        "name": "   72781",
         "type": "string"
       }
     ],
