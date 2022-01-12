@@ -1,1 +1,3 @@
-mkdir ~/Documents/test
+# mkdir ~/Documents/test
+
+pwd

@@ -3,7 +3,8 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "autoInferSchema": false,
+    "pipeOut": "shell_output",
+    "autoInferSchema": true,
     "expectHeaders": false,
     "sendHeaders": false,
     "skipPrerunValidate": false
@@ -28,11 +29,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1641951898966
+    "lastModifiedOn": 1641952173255
   },
   "creationTag": {
     "versionNumber": 0,
