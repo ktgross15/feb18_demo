@@ -47,7 +47,7 @@
   },
   "tutorialProject": false,
   "settings": {
-    "flowAnchorSourcesAndSinks": false,
+    "flowAnchorSourcesAndSinks": true,
     "flowDisplaySettings": {
       "zonesGraphRenderingAlgorithm": "DOT_OLDRANK",
       "zonesGraphConnectZones": true
@@ -213,11 +213,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1640798156600
+    "lastModifiedOn": 1641951672497
   },
   "creationTag": {
     "versionNumber": 0,
