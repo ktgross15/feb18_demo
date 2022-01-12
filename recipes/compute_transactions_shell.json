@@ -3,6 +3,8 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
+    "pipeIn": "transactions_unknown_scored",
+    "pipeOut": "transactions_shell",
     "autoInferSchema": false,
     "expectHeaders": false,
     "sendHeaders": false,
@@ -37,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1641952024732
+    "lastModifiedOn": 1641952140135
   },
   "creationTag": {
     "versionNumber": 0,
