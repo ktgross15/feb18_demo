@@ -5,7 +5,7 @@
   "params": {
     "pipeIn": "transactions_unknown_scored",
     "pipeOut": "transactions_shell",
-    "autoInferSchema": false,
+    "autoInferSchema": true,
     "expectHeaders": false,
     "sendHeaders": false,
     "skipPrerunValidate": false
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1641952140135
+    "lastModifiedOn": 1641952198660
   },
   "creationTag": {
     "versionNumber": 0,
