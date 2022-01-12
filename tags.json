@@ -6,9 +6,11 @@
     "imported": {
       "color": "#263238"
     },
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
     "postgres-local": {
       "color": "#77bec2"
-    },
-    "recipe-editor": {}
+    }
   }
 }
