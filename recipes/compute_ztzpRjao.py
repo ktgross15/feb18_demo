@@ -12,6 +12,8 @@ from sklearn.ensemble import RandomForestClassifier
 transactions_known = dataiku.Dataset("transactions_known")
 df = transactions_known.get_dataframe(limit=10000)
 
+#yooooo
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df.head()
 
