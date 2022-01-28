@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "suffix": "hi"
+      "suffix": ""
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1643392155186
+    "lastModifiedOn": 1643392181453
   },
   "creationTag": {
     "versionNumber": 0,
