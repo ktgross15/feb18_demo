@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1640798514849
+    "lastModifiedOn": 1643682583483
   },
   "creationTag": {
     "versionNumber": 0,
@@ -155,11 +155,11 @@
       },
       {
         "name": "merchant_latitude",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "merchant_longitude",
-        "type": "double"
+        "type": "string"
       }
     ],
     "userModified": true
