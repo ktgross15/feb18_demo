@@ -5,18 +5,18 @@
   "name": "s1",
   "active": true,
   "creationTag": {
-    "versionNumber": 6,
-    "lastModifiedBy": {
-      "login": "ktgross15"
-    },
-    "lastModifiedOn": 1643683155477
-  },
-  "versionTag": {
     "versionNumber": 7,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
     "lastModifiedOn": 1643684130956
+  },
+  "versionTag": {
+    "versionNumber": 8,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1643684244895
   },
   "checklists": {
     "checklists": []
@@ -56,11 +56,12 @@
       "delay": 5,
       "active": true,
       "params": {
-        "repeatFrequency": 5,
-        "frequency": "Hourly",
+        "repeatFrequency": 1,
+        "frequency": "Weekly",
         "startingFrom": "2022-02-02T02:55:00.000Z",
         "daysOfWeek": [
-          "Monday"
+          "Monday",
+          "Wednesday"
         ],
         "minute": 55,
         "hour": 21,
