@@ -3,7 +3,13 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "language": "en",
+      "expert": false,
+      "edit_distance": 2,
+      "ignore_word_regex": "",
+      "text_column": "reward_program"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +43,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1643757188685
+    "lastModifiedOn": 1643757196449
   },
   "creationTag": {
     "versionNumber": 0,
