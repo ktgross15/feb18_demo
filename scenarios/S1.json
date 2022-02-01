@@ -3,20 +3,20 @@
   "id": "S1",
   "type": "step_based",
   "name": "s1",
-  "active": false,
+  "active": true,
   "creationTag": {
-    "versionNumber": 2,
-    "lastModifiedBy": {
-      "login": "ktgross15"
-    },
-    "lastModifiedOn": 1643312986238
-  },
-  "versionTag": {
     "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
     "lastModifiedOn": 1643682622790
+  },
+  "versionTag": {
+    "versionNumber": 4,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1643683025867
   },
   "checklists": {
     "checklists": []
