@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1643757186834
+    "lastModifiedOn": 1643757252415
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,8 +57,53 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "internal_card_mapping",
+        "type": "string"
+      },
+      {
+        "name": "first_active_month",
+        "type": "string"
+      },
+      {
+        "name": "reward_program",
+        "type": "string"
+      },
+      {
+        "name": "latitude",
+        "type": "double"
+      },
+      {
+        "name": "longitude",
+        "type": "double"
+      },
+      {
+        "name": "fico_score",
+        "type": "bigint"
+      },
+      {
+        "name": "age",
+        "type": "bigint"
+      },
+      {
+        "name": "reward_program_corrected",
+        "type": "string"
+      },
+      {
+        "name": "reward_program_misspellings",
+        "type": "string"
+      },
+      {
+        "name": "reward_program_misspelling_list",
+        "type": "string"
+      },
+      {
+        "name": "reward_program_misspelling_count",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
