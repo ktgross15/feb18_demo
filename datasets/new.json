@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1643757252415
+    "lastModifiedOn": 1643757304017
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,47 +60,58 @@
     "columns": [
       {
         "name": "internal_card_mapping",
-        "type": "string"
+        "type": "string",
+        "comment": ""
       },
       {
         "name": "first_active_month",
-        "type": "string"
+        "type": "string",
+        "comment": ""
       },
       {
         "name": "reward_program",
-        "type": "string"
+        "type": "string",
+        "comment": ""
       },
       {
         "name": "latitude",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "longitude",
-        "type": "double"
+        "type": "double",
+        "comment": ""
       },
       {
         "name": "fico_score",
-        "type": "bigint"
+        "type": "bigint",
+        "comment": ""
       },
       {
         "name": "age",
-        "type": "bigint"
+        "type": "bigint",
+        "comment": ""
       },
       {
         "name": "reward_program_corrected",
-        "type": "string"
+        "type": "string",
+        "comment": "Corrected text"
       },
       {
         "name": "reward_program_misspellings",
-        "type": "string"
+        "type": "string",
+        "comment": "Misspelled text"
       },
       {
         "name": "reward_program_misspelling_list",
-        "type": "string"
+        "type": "string",
+        "comment": "List of unique misspellings"
       },
       {
         "name": "reward_program_misspelling_count",
-        "type": "bigint"
+        "type": "bigint",
+        "comment": "Number of misspellings"
       }
     ],
     "userModified": false
