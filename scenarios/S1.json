@@ -5,18 +5,18 @@
   "name": "s1",
   "active": false,
   "creationTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "ktgross15"
-    },
-    "lastModifiedOn": 1643312910052
-  },
-  "versionTag": {
     "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
     "lastModifiedOn": 1643312986238
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1643682622790
   },
   "checklists": {
     "checklists": []
@@ -27,7 +27,29 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "aH6SGE4H",
+      "type": "ds_modified",
+      "name": "Dataset modified",
+      "delay": 60,
+      "active": true,
+      "params": {
+        "watches": [
+          {
+            "type": "DATASET",
+            "itemId": "merchant_info_raw",
+            "partitionsSpec": ""
+          }
+        ],
+        "triggerWhenAllFire": false
+      },
+      "graceDelaySettings": {
+        "delay": 30,
+        "checkAgainAfterGraceDelay": true
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": [
