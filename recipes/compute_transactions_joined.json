@@ -21,7 +21,7 @@
           "deps": []
         },
         {
-          "ref": "merchant_info_copy",
+          "ref": "merchant_info",
           "deps": []
         }
       ]
@@ -39,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1640798515030
+    "lastModifiedOn": 1643682583767
   },
   "creationTag": {
     "versionNumber": 0,
