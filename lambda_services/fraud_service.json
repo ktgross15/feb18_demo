@@ -61,6 +61,19 @@
       "auditPostEnrichData": false,
       "id": "fraud_preds",
       "type": "STD_PREDICTION"
+    },
+    {
+      "modelType": "CLASSIFICATION",
+      "envSelection": {
+        "envMode": "INHERIT"
+      },
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "python_preds",
+      "type": "CUSTOM_PREDICTION"
     }
   ],
   "publicAccess": true,
@@ -68,11 +81,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1643913188383
+    "lastModifiedOn": 1643914008726
   },
   "creationTag": {
     "versionNumber": 0,
