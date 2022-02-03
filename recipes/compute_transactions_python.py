@@ -15,6 +15,8 @@ df.head()
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df['new_col'] = 'hello!'
 
+# hello everyone!
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 transactions_python = dataiku.Dataset("transactions_python")
