@@ -87,7 +87,7 @@
         }
       ],
       "userFunctionName": "api_py_function",
-      "code": "import cPickle as pickle\nimport os.path\n\nfolder_path \u003d folders[1]\nfile_path \u003d os.path.join(folder_path, \"mydata.pkl\")\n\ndef api_py_function(param1, param2, param3):\n    return param1 + param2 * param3\n",
+      "code": "import cPickle as pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model_2022-1-11.pkl\")\n\ndef api_py_function(param1, param2, param3):\n    return param1 + param2 * param3\n",
       "id": "python_function",
       "type": "PY_FUNCTION"
     }
@@ -97,11 +97,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644004467266
+    "lastModifiedOn": 1644004532743
   },
   "creationTag": {
     "versionNumber": 0,
