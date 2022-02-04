@@ -17,6 +17,8 @@ df['new_col'] = 'hello!'
 
 # hello everyone!
 
+# happy friday
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 transactions_python = dataiku.Dataset("transactions_python")
