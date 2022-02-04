@@ -33,8 +33,9 @@ model = RandomForestClassifier()
 model.fit(X, y)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-today = datetime.date.today()
-filename = 'model_{}-{}-{}.pkl'.format(today.year, today.month, today.day)
+# today = datetime.date.today()
+# filename = 'model_{}-{}-{}.pkl'.format(today.year, today.month, today.day)
+filename = 'model.pkl'
 
 model_folder = dataiku.Folder("model_folder")
 with model_folder.get_writer(filename) as w:
