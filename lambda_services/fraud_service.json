@@ -83,11 +83,8 @@
       "testQueries": [
         {
           "q": {
-            "merchant_category_id": 5,
             "purchase_amount": 200,
-            "days_active": 10,
             "card_fico_score": 420,
-            "card_age": 50,
             "merchant_cardholder_distance": 150
           }
         }
@@ -98,7 +95,7 @@
         }
       ],
       "userFunctionName": "api_py_function",
-      "code": "import cPickle as pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path) as f:\n    model \u003d pickle.load(f)\n\ndef api_py_function(features):\n    return param1 + param2 * param3\n",
+      "code": "import cPickle as pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path) as f:\n    model \u003d pickle.load(f)\n\ndef api_py_function(merchant_category_id, ):\n    return param1 + param2 * param3\n",
       "id": "python_function",
       "type": "PY_FUNCTION"
     }
@@ -108,11 +105,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644005305291
+    "lastModifiedOn": 1644005346780
   },
   "creationTag": {
     "versionNumber": 0,
