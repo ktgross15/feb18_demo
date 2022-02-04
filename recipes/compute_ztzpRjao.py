@@ -21,8 +21,11 @@ df.head()
 df.dropna(inplace=True)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-features = ['purchase_month','purchase_dow','purchase_hour','merchant_category_id','purchase_amount','days_active',
-            'card_fico_score','card_age','merchant_cardholder_distance']
+# features = ['purchase_month','purchase_dow','purchase_hour','merchant_category_id','purchase_amount','days_active',
+#             'card_fico_score','card_age','merchant_cardholder_distance']
+
+features = ['merchant_category_id','purchase_amount','days_active','card_fico_score','card_age','merchant_cardholder_distance']
+
 target = 'authorized_flag'
 
 X = df[features].values
