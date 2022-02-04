@@ -84,7 +84,8 @@
         {
           "q": {
             "merchant_category_id": 5,
-            "purchase_amount": 200
+            "purchase_amount": 200,
+            "days_active": 10
           }
         }
       ],
@@ -104,11 +105,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644005239167
+    "lastModifiedOn": 1644005278601
   },
   "creationTag": {
     "versionNumber": 0,
