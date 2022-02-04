@@ -18,7 +18,7 @@
       ],
       "inputFolderRefs": [],
       "userFunctionName": "api_py_function",
-      "code": "import pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path, \u0027rb\u0027) as f:\n    clf \u003d pickle.load(f)\n\ndef api_py_function(features):\n    values \u003d pd.DataFrame.from_dict(features, orient\u003d\u0027index\u0027).T.values\n    print (values)\n    pfdskflds\n    \n    preds \u003d clf.predict_proba(values)\n    return preds\n",
+      "code": "import pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path, \u0027rb\u0027) as f:\n    clf \u003d pickle.load(f)\n\ndef api_py_function(features):\n    values \u003d pd.DataFrame.from_dict(features, orient\u003d\u0027index\u0027).T.values\n    print (\"valuessss\")\n    print (values)\n    valuessss\n    \n    preds \u003d clf.predict_proba(values)\n    return preds\n",
       "id": "python_function",
       "type": "PY_FUNCTION"
     }
@@ -28,11 +28,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644008191168
+    "lastModifiedOn": 1644008212428
   },
   "creationTag": {
     "versionNumber": 0,
