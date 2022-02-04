@@ -43,7 +43,7 @@
               "showTooltips": true,
               "autoPlayAnimation": true
             },
-            "autoLoad": true,
+            "autoLoad": false,
             "showTitle": "YES",
             "insightId": "tPe8XjY",
             "insightType": "chart",
@@ -108,11 +108,11 @@
   "name": "Credit Card Fraud Pat\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1643987072496
+    "lastModifiedOn": 1643987076049
   },
   "creationTag": {
     "versionNumber": 0,
