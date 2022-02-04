@@ -90,7 +90,7 @@
               "showMeaning": false,
               "showProgressBar": false
             },
-            "autoLoad": false,
+            "autoLoad": true,
             "showTitle": "YES",
             "insightId": "YtXeURx",
             "insightType": "dataset_table",
@@ -108,11 +108,11 @@
   "name": "Credit Card Fraud Pat\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1643987060335
+    "lastModifiedOn": 1643987072496
   },
   "creationTag": {
     "versionNumber": 0,
