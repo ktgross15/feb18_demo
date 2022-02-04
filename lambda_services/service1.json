@@ -32,7 +32,17 @@
       "envSelection": {
         "envMode": "INHERIT"
       },
-      "testQueries": [],
+      "testQueries": [
+        {
+          "q": {
+            "features": {
+              "purchase_amount": 200,
+              "card_fico_score": 420,
+              "merchant_cardholder_distance": 150
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -46,11 +56,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644009349667
+    "lastModifiedOn": 1644009361864
   },
   "creationTag": {
     "versionNumber": 0,
