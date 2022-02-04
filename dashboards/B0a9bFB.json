@@ -55,8 +55,8 @@
             "box": {
               "top": 4,
               "left": 0,
-              "width": 2,
-              "height": 2
+              "width": 6,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -84,11 +84,11 @@
   "name": "Credit Card Fraud Pat\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1643986855552
+    "lastModifiedOn": 1643986864106
   },
   "creationTag": {
     "versionNumber": 0,
