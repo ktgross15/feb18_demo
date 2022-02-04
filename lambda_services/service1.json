@@ -28,6 +28,7 @@
     },
     {
       "modelType": "CLASSIFICATION",
+      "inputFolderRef": "ztzpRjao",
       "envSelection": {
         "envMode": "INHERIT"
       },
@@ -45,11 +46,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644009228099
+    "lastModifiedOn": 1644009349667
   },
   "creationTag": {
     "versionNumber": 0,
