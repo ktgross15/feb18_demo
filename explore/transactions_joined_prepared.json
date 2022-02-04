@@ -49,7 +49,8 @@
       "percentile": false,
       "validity": false,
       "updateOnAnalyzeBoxOpen": false,
-      "computeCostFreeMetrics": false
+      "computeCostFreeMetrics": false,
+      "numberTopValues": 10
     },
     "columnsSelection": {
       "mode": "ALL"
@@ -99,6 +100,7 @@
     "explorationSampling": {
       "selection": {
         "maxStoredBytes": 104857600,
+        "timeout": -1,
         "filter": {
           "distinct": false,
           "enabled": true,
@@ -130,6 +132,24 @@
       "_refreshTrigger": 1
     },
     "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
@@ -236,9 +256,25 @@
         "fillOpacity": 0.6,
         "showXAxisLabel": true,
         "showYAxisLabel": true,
+        "displayXAxis": true,
+        "displayYAxis": true,
         "hexbinRadius": 20,
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
+        "yCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "xCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
         "chartHeight": 200,
         "singleXAxis": true,
         "multiTooltips": false,
@@ -259,7 +295,10 @@
           "paletteType": "CONTINUOUS",
           "quantizationMode": "NONE",
           "numQuantizeSteps": 5,
-          "paletteMiddleValue": 0.0
+          "paletteMiddleValue": 0.0,
+          "customColors": {},
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5
         },
         "bubblesOptions": {
           "defaultRadius": 5.0,
@@ -283,6 +322,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABLFJREFUeF7tm09sFHUUx9+bLWhQWma7W4qlATRtDFGiIcQYCUU4EA4S/yWIEqLRpHcULx7UeEOMB4W0BAImJSSFpCHcIG0sFw+SmCgWU5MatZDA7s6MYgTb7e+Z2e6002W37PZ3+f3evD21s/M27/v9vO9vfjObRZAXaweQtToRBwKY+RAIYAHM3AHm8iTBApi5A8zlSYIFMHMHmMuTBAtg5g4wlycJFsDMHWAuTxIsgJk7wFyeJFgAM3eAuTxJsABm7gBzeZJgAczcAebyJMECmLkDVeTl0un3s573Rc51h7K+/4rNDkiCawCODoegBbDNDlT0HqY3fkgAM4IbSqkE7AAMtnren7bKlCU6Ru62636EiPfiMGcAgnbPOymAbXUg1ndlesO3CLHQViictlWeJPhBgJX6vi0IrghgWx0o933bdY8i4kQ1GTZvtCTBAJDf27yFLjdtqzWjAtiy9HqX3BccUA9HbU9/m3oG+hYXYStk9gkmAswfTx+M43PWxf4bo3dUHk8JYMtSGrWb61/44CI8vgCwR13qGv66GGBSKt8WBN/YaAHrBOf63UMAqCrBRICdAJ4s/gi/lN6vsURnPO9LBLjvM2yBzRZwrm/VCUDnejUQEWCaoB6axNFagO+tWHGsc3Lyri0wq/XJF3CVpTkyIAKs4ne38wnuAMfpy+TzEwhQtBlu2DsLwNWus4uBqQUYiVIZ3z9sO9R4/wI4cqMPwNZbocUGMrGA8V/aMHMVf4vMwWn1RubzYAun9LJYonP97gUAbOxZ8WAMI8GjgPBPeCQ7bPeX+6w2Wf7Lq9YXHec12LWEzMUBl8uJ1FTbSPDVEj7N6BJrl+jcq+UHGA0CdohWq3N4qwaV1dlh70OjiTXYnP2A6xEcGwIEWkYBTs/dMr0NoN6c/xBuy3QiAONWtY8ecc6WNh0Knqe/4bsFgE/QSzCCF4GoPTviH6pnZmw5JxGAQxjFPfBU039wzZmB19UdOF8CtBzWpvbRE+l2f8+tHe5xB3A8O+IdsQVePX0mAvDPX0MHItxouUHrOobxd6cFHlMIN0s7515+O2cWDzrmNll1jPHY0dmTWm7Ssx1X8Yfw7xTQpXSv/1Md5VafkogEj39G24ppvOL+QVs3PWf3LxUanbZEAA5NiVLcs4b3klw5APwBE+DYMaCy8JU9a7xPGk2BzedbCzgyvTBQeuDRTEQPAcFf6OBUHMjodni6NQWla23S0lu6LbR5OsPe/TPpj923vE8rgM/J6uoGHOqcTbAAtp02AHgD7m4C3BhJ6eoGGOpMJlwWCa42k4Uz6Q+AZlMbAs6kqHt8s9/LYH4blmD9El0V8Ox1ufR68XE6sOkuTQzsDKz+IXfDZMsFLAF7g24LTeF7kSmt+5N1axQfBpaAI4G5k5mV2Xfzd5Y6/RzqWAPmAEhXgwDWddDwegFsOCDd9gSwroOG1wtgwwHptieAdR00vF4AGw5Itz0BrOug4fUC2HBAuu0JYF0HDa8XwIYD0m1PAOs6aHi9ADYckG57AljXQcPrBbDhgHTbE8C6DhpeL4ANB6TbngDWddDwegFsOCDd9gSwroOG1wtgwwHptieAdR00vP5/Jv9AYGHwIpwAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -394,6 +434,8 @@
         "hexbinRadius": 20,
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
+        "yCustomExtent": {},
+        "xCustomExtent": {},
         "chartHeight": 200,
         "singleXAxis": true,
         "multiTooltips": false,
@@ -414,7 +456,10 @@
           "paletteType": "CONTINUOUS",
           "quantizationMode": "NONE",
           "numQuantizeSteps": 5,
-          "paletteMiddleValue": 0.0
+          "paletteMiddleValue": 0.0,
+          "customColors": {},
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5
         },
         "bubblesOptions": {
           "defaultRadius": 5.0,
