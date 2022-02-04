@@ -18,7 +18,7 @@
       ],
       "inputFolderRefs": [],
       "userFunctionName": "api_py_function",
-      "code": "import cPickle as pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path) as f:\n    model \u003d pickle.load(f)\n\ndef api_py_function(features):\n    preds \u003d model.predict(features)\n    \n    return preds\n",
+      "code": "import pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path) as f:\n    model \u003d pickle.load(f)\n\ndef api_py_function(features):\n    preds \u003d model.predict(features)\n    \n    return preds\n",
       "id": "python_function",
       "type": "PY_FUNCTION"
     }
@@ -28,11 +28,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644006160475
+    "lastModifiedOn": 1644006176047
   },
   "creationTag": {
     "versionNumber": 0,
