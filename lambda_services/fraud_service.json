@@ -85,7 +85,10 @@
           "q": {
             "merchant_category_id": 5,
             "purchase_amount": 200,
-            "days_active": 10
+            "days_active": 10,
+            "card_fico_score": 420,
+            "card_age": 50,
+            "merchant_cardholder_distance": 150
           }
         }
       ],
@@ -105,11 +108,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644005278601
+    "lastModifiedOn": 1644005301625
   },
   "creationTag": {
     "versionNumber": 0,
