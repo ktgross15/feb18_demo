@@ -83,7 +83,7 @@
       "testQueries": [
         {
           "q": {
-            "paramNameToReplace": "paramValueToReplace"
+            "merchant_category_id": 5
           }
         }
       ],
@@ -93,7 +93,7 @@
         }
       ],
       "userFunctionName": "api_py_function",
-      "code": "import cPickle as pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path) as f:\n    data \u003d pickle.load(f)\n\ndef api_py_function(features):\n    return param1 + param2 * param3\n",
+      "code": "import cPickle as pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path) as f:\n    model \u003d pickle.load(f)\n\ndef api_py_function(features):\n    return param1 + param2 * param3\n",
       "id": "python_function",
       "type": "PY_FUNCTION"
     }
@@ -103,11 +103,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644005077317
+    "lastModifiedOn": 1644005228643
   },
   "creationTag": {
     "versionNumber": 0,
