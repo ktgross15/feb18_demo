@@ -8,8 +8,11 @@
       "testQueries": [
         {
           "q": {
-            "param1": 3,
-            "param2": 5
+            "features": {
+              "purchase_amount": 200,
+              "card_fico_score": 420,
+              "merchant_cardholder_distance": 150
+            }
           }
         }
       ],
@@ -25,11 +28,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644006148248
+    "lastModifiedOn": 1644006160475
   },
   "creationTag": {
     "versionNumber": 0,
