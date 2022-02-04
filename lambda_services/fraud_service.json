@@ -95,7 +95,7 @@
         }
       ],
       "userFunctionName": "api_py_function",
-      "code": "import cPickle as pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path) as f:\n    model \u003d pickle.load(f)\n\ndef api_py_function(purchase_amount, card_fico_score, merchant_cardholder_distance):\n    \n    \n    \n    return param1 + param2 * param3\n",
+      "code": "import cPickle as pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path) as f:\n    model \u003d pickle.load(f)\n\ndef api_py_function(purchase_amount, card_fico_score, merchant_cardholder_distance):\n    feats \u003d {\"purchase_amount\": purchase_amount, \n             \"card_fico_score\": card_fico_score, \n             \"merchant_cardholder_distance\": merchant_cardholder_distance}\n   \n    preds \u003d model.predict(feats)\n    \n    return param1 + param2 * param3\n",
       "id": "python_function",
       "type": "PY_FUNCTION"
     }
@@ -105,11 +105,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644005448465
+    "lastModifiedOn": 1644005535532
   },
   "creationTag": {
     "versionNumber": 0,
