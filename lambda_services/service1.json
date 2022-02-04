@@ -18,9 +18,22 @@
       ],
       "inputFolderRefs": [],
       "userFunctionName": "api_py_function",
-      "code": "import pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path, \u0027rb\u0027) as f:\n    model \u003d pickle.load(f)\n\ndef api_py_function(features):\n    preds \u003d model.predict(features)\n    \n    return preds\n",
+      "code": "import pickle\nimport os.path\n\nfolder_path \u003d folders[0]\nfile_path \u003d os.path.join(folder_path, \"model.pkl\")\n\nwith open(file_path) as f:\n    model \u003d pickle.load(f)\n\ndef api_py_function(features):\n    preds \u003d model.predict(features)\n    \n    return preds\n",
       "id": "python_function",
       "type": "PY_FUNCTION"
+    },
+    {
+      "modelType": "CLASSIFICATION",
+      "envSelection": {
+        "envMode": "INHERIT"
+      },
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "classification",
+      "type": "CUSTOM_PREDICTION"
     }
   ],
   "publicAccess": true,
@@ -28,11 +41,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644007026870
+    "lastModifiedOn": 1644007491728
   },
   "creationTag": {
     "versionNumber": 0,
