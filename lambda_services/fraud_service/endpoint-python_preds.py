@@ -1,5 +1,5 @@
 from  dataiku.apinode.predict.predictor import ClassificationPredictor
-# import pandas as pd
+import pandas as pd
 import pickle
 import os
 
