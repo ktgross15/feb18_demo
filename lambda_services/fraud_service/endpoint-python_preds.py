@@ -1,6 +1,6 @@
 from  dataiku.apinode.predict.predictor import ClassificationPredictor
 import pandas as pd
-import pickle
+from cPickle import pickle
 import os
 
 class MyPredictor(ClassificationPredictor):
