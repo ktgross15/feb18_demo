@@ -4,7 +4,7 @@
   "params": {
     "backendEnabled": true,
     "enableJavascriptModules": false,
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "hideJSSecurityPanel": true,
     "envSelection": {
       "envMode": "INHERIT"
@@ -38,15 +38,17 @@
     },
     "forceAuthentication": false
   },
-  "config": {},
+  "config": {
+    "input_folder": "MvvolTEn"
+  },
   "name": "decision tree",
   "apiKey": "3hcL1GrjVwYfdyvc0AeFHb6VnffolCyv",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644414037754
+    "lastModifiedOn": 1644414080700
   },
   "creationTag": {
     "versionNumber": 0,
