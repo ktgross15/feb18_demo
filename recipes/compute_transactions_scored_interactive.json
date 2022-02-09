@@ -3,7 +3,13 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "chunkSize": 10000,
+      "outputProbabilities": true,
+      "keepSomeColumns": false,
+      "inputColumns": [],
+      "treeFile": "/tree_1.json"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -45,11 +51,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644416534039
+    "lastModifiedOn": 1644416550446
   },
   "creationTag": {
     "versionNumber": 0,
