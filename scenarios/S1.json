@@ -5,18 +5,18 @@
   "name": "s1",
   "active": true,
   "creationTag": {
-    "versionNumber": 8,
-    "lastModifiedBy": {
-      "login": "ktgross15"
-    },
-    "lastModifiedOn": 1643684244895
-  },
-  "versionTag": {
     "versionNumber": 9,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
     "lastModifiedOn": 1643684255180
+  },
+  "versionTag": {
+    "versionNumber": 10,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1644415261357
   },
   "checklists": {
     "checklists": []
@@ -95,6 +95,30 @@
           "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "set_project_vars",
+        "type": "set_project_vars",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "variables": {},
+          "definitions": [
+            {
+              "key": "cur_date",
+              "value": "\"purchase_date\" - 30"
+            }
+          ],
+          "evaluateValues": true
         }
       }
     ]
