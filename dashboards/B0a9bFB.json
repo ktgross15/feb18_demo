@@ -96,6 +96,99 @@
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 7,
+              "left": 0,
+              "width": 3,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "filters": [
+                {
+                  "filterType": "ALPHANUM_FACET",
+                  "column": "subsector_description",
+                  "columnType": "ALPHANUM",
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "selectedValues": {
+                    "adult industry": true,
+                    "advertising services": true,
+                    "astrological services": true,
+                    "automobiles": true,
+                    "beauty \u0026 personal care": true,
+                    "biotechnology": true,
+                    "carpentry": true,
+                    "consumer electronics": true,
+                    "dental": true,
+                    "education services": true,
+                    "entertainment": true,
+                    "financial services": true,
+                    "flights": true,
+                    "gas": true,
+                    "groceries": true,
+                    "gym": true,
+                    "health care services": true,
+                    "health care technology": true,
+                    "hotel": true,
+                    "insurance": true,
+                    "internet": true,
+                    "liquor": true,
+                    "luxury goods": true,
+                    "magic cards": true,
+                    "misc entertainment": true,
+                    "news \u0026 journalism": true,
+                    "office supplies": true,
+                    "pharmaceuticals": true,
+                    "phone bill": true,
+                    "professional photography": true,
+                    "real estate investments": true,
+                    "real estate services": true,
+                    "restaurant/dining": true,
+                    "retail apparel": true,
+                    "semiconductors": true,
+                    "software": true,
+                    "tobacco": true,
+                    "utilities": true
+                  },
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
+                }
+              ],
+              "engineType": "SQL",
+              "refreshableSelection": {
+                "selection": {
+                  "useMemTable": false,
+                  "filter": {
+                    "distinct": false,
+                    "enabled": false
+                  },
+                  "partitionSelectionMethod": "ALL",
+                  "latestPartitionsN": 1,
+                  "ordering": {
+                    "enabled": false,
+                    "rules": []
+                  },
+                  "samplingMethod": "HEAD_SEQUENTIAL",
+                  "maxRecords": 10000,
+                  "targetRatio": 0.02,
+                  "withinFirstN": -1,
+                  "maxReadUncompressedBytes": -1
+                },
+                "autoRefreshSample": false,
+                "_refreshTrigger": 0
+              },
+              "copySelectionFromScript": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "N6lruhv",
+            "insightType": "filters",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -108,11 +201,11 @@
   "name": "Credit Card Fraud Pat\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1643987076049
+    "lastModifiedOn": 1644599776297
   },
   "creationTag": {
     "versionNumber": 0,
