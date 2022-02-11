@@ -411,7 +411,7 @@
         "datetime_cyclical_periods": [
           "WEEK"
         ],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": true,
@@ -777,7 +777,7 @@
         "sendToInput": "main"
       },
       "merchant_state": {
-        "category_handling": "IMPACT",
+        "category_handling": "DUMMIFY",
         "missing_handling": "NONE",
         "missing_impute_with": "MODE",
         "dummy_clip": "MAX_NB_CATEGORIES",
