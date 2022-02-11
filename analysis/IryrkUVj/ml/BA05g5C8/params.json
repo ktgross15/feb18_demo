@@ -1836,7 +1836,7 @@
       "penalty": {
         "values": {
           "l2": {
-            "enabled": false
+            "enabled": true
           },
           "l1": {
             "enabled": false
