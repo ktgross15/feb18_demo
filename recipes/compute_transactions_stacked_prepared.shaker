@@ -26,8 +26,31 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "purchase_date_parsed",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ],
+        "columns": [
+          "purchase_date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -53,7 +76,18 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "transaction_id": 120,
+    "purchase_date_parsed": 190,
+    "purchase_amount": 128,
+    "signature_provided": 150,
+    "merchant_id": 127,
+    "merchant_category_id": 165,
+    "purchase_date": 148,
+    "authorized_flag": 128,
+    "card_id": 120,
+    "item_category": 113
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
