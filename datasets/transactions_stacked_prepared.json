@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644864432274
+    "lastModifiedOn": 1644864442572
   },
   "creationTag": {
     "versionNumber": 0,
@@ -69,6 +69,10 @@
       {
         "name": "purchase_date",
         "type": "string"
+      },
+      {
+        "name": "purchase_date_parsed",
+        "type": "date"
       },
       {
         "name": "card_id",
