@@ -1,7 +1,7 @@
 library(dataiku)
 
 # Recipe inputs
-transactions_known <- dkuReadDataset("transactions_known", samplingMethod="head", nbRows=10000)
+transactions_known <- dkuReadDataset("transactions_known", samplingMethod="head", nbRows=10000, inferColClassesFromData=FALSE)
 
 # Compute recipe outputs from inputs
 # TODO: Replace this part by your actual code that computes the output, as a R dataframe or data table
