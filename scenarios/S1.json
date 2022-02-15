@@ -3,20 +3,20 @@
   "id": "S1",
   "type": "step_based",
   "name": "s1",
-  "active": true,
+  "active": false,
   "creationTag": {
-    "versionNumber": 10,
-    "lastModifiedBy": {
-      "login": "ktgross15"
-    },
-    "lastModifiedOn": 1644415261357
-  },
-  "versionTag": {
     "versionNumber": 11,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
     "lastModifiedOn": 1644418047963
+  },
+  "versionTag": {
+    "versionNumber": 12,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1644897524514
   },
   "checklists": {
     "checklists": []
@@ -75,7 +75,7 @@
         "id": "build_0_true_d_transactions_unknown",
         "type": "build_flowitem",
         "name": "Step #1",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -101,7 +101,7 @@
         "id": "set_project_vars",
         "type": "set_project_vars",
         "name": "Step #2",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -119,6 +119,25 @@
             }
           ],
           "evaluateValues": true
+        }
+      },
+      {
+        "id": "refresh_chart_cache",
+        "type": "refresh_chart_cache",
+        "name": "Step #3",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "force": false,
+          "dashboards": [],
+          "proceedOnFailure": false
         }
       }
     ]
