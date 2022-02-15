@@ -191,7 +191,7 @@
       "disabled": false,
       "type": "FilterOnNumericalRange",
       "params": {
-        "min": 500.0,
+        "min": 800.0,
         "booleanMode": "AND",
         "columns": [
           "days_active"
