@@ -5,18 +5,18 @@
   "name": "s1",
   "active": false,
   "creationTag": {
-    "versionNumber": 11,
-    "lastModifiedBy": {
-      "login": "ktgross15"
-    },
-    "lastModifiedOn": 1644418047963
-  },
-  "versionTag": {
     "versionNumber": 12,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
     "lastModifiedOn": 1644897524514
+  },
+  "versionTag": {
+    "versionNumber": 13,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1644897537285
   },
   "checklists": {
     "checklists": []
@@ -136,7 +136,12 @@
         "maxRetriesOnFail": 0,
         "params": {
           "force": false,
-          "dashboards": [],
+          "dashboards": [
+            {
+              "smartName": "B0a9bFB",
+              "name": "Credit Card Fraud Pat\u0027s default dashboard"
+            }
+          ],
           "proceedOnFailure": false
         }
       }
