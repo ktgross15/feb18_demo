@@ -20,7 +20,8 @@
       "maxStoredBytes": 104857600,
       "targetRatio": 0.02,
       "maxReadUncompressedBytes": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL"
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
     },
     "autoRefreshSample": false
   },
@@ -152,6 +153,7 @@
       "disabled": false,
       "type": "CityLevelReverseGeocoder",
       "params": {
+        "doOutputBoundaries": false,
         "l4OutCol": "merchant_state",
         "inputCol": "merchant_location"
       },
@@ -163,13 +165,14 @@
       "disabled": false,
       "type": "CityLevelReverseGeocoder",
       "params": {
+        "doOutputBoundaries": false,
         "l4OutCol": "card_state",
         "inputCol": "card_location"
       },
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "GeoDistanceProcessor",
@@ -181,12 +184,46 @@
         "compareTo": "COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 500.0,
+        "booleanMode": "AND",
+        "columns": [
+          "days_active"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL"
+    },
     "autoRefreshSample": false
   },
   "analysisColumnData": {},

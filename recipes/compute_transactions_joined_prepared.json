@@ -48,6 +48,8 @@
   },
   "redispatchPartitioning": false,
   "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
   "inputs": {
     "main": {
       "items": [
@@ -68,12 +70,13 @@
       ]
     }
   },
+  "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "dataiku-admin"
+      "login": "ktgross15"
     },
-    "lastModifiedOn": 1589318915840
+    "lastModifiedOn": 1644897045177
   },
   "creationTag": {
     "versionNumber": 0,
