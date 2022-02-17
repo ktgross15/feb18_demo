@@ -209,7 +209,7 @@
           }
         ]
       },
-      "title": "Credit Card Fraud Patterns",
+      "title": "",
       "showTitle": true
     }
   ],
@@ -218,11 +218,11 @@
   "name": "fd",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1645119300530
+    "lastModifiedOn": 1645119324592
   },
   "creationTag": {
     "versionNumber": 0,
