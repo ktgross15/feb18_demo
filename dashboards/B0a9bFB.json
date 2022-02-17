@@ -215,14 +215,14 @@
   ],
   "owner": "dataiku-admin",
   "listed": true,
-  "name": "Credit Card Fraud Pat\u0027s default dashboard",
+  "name": "fd",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1644897207125
+    "lastModifiedOn": 1645119300530
   },
   "creationTag": {
     "versionNumber": 0,
