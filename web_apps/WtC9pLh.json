@@ -1,0 +1,53 @@
+{
+  "type": "SHINY",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "autoStartBackend": false,
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "infra": {
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "overrideGlobalK8sExposition": false,
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "scaling": {
+        "initialReplicas": 1,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "deploymentModifier": {}
+    },
+    "forceAuthentication": false
+  },
+  "config": {},
+  "name": "r shiny",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1645129035277
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1645129035277
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}
