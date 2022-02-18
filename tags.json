@@ -1,5 +1,8 @@
 {
   "tags": {
+    "new-dataset": {
+      "color": "#0f6d82"
+    },
     "origin:sql_import": {
       "color": "#FFD83D"
     },
