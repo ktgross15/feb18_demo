@@ -4,6 +4,7 @@
     "enabled": false
   },
   "ntileValues": "10",
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -12,9 +13,11 @@
       "firstLastNotNull": false,
       "column": "transaction_id",
       "count": false,
+      "$idx": 0,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -35,9 +38,11 @@
       "firstLastNotNull": false,
       "column": "authorized_flag",
       "count": false,
+      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -58,9 +63,11 @@
       "firstLastNotNull": false,
       "column": "purchase_date",
       "count": false,
+      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -81,9 +88,11 @@
       "firstLastNotNull": false,
       "column": "card_id",
       "count": false,
+      "$idx": 3,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -104,9 +113,11 @@
       "firstLastNotNull": false,
       "column": "merchant_id",
       "count": false,
+      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -127,9 +138,11 @@
       "firstLastNotNull": false,
       "column": "merchant_category_id",
       "count": false,
+      "$idx": 5,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -150,9 +163,11 @@
       "firstLastNotNull": false,
       "column": "item_category",
       "count": false,
+      "$idx": 6,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -173,9 +188,37 @@
       "firstLastNotNull": false,
       "column": "purchase_amount",
       "count": false,
+      "$idx": 7,
+      "lagValues": "1",
+      "sum": true,
+      "concat": false,
+      "type": "double",
+      "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "lag": false,
+      "leadValues": "1",
+      "$selected": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "signature_provided",
+      "count": false,
+      "$idx": 8,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -190,33 +233,16 @@
       "first": false
     },
     {
-      "last": false,
-      "lagDiff": false,
-      "max": false,
+      "customExpr": "purchase_amount/purchase_amount_sum",
       "firstLastNotNull": false,
-      "column": "signature_provided",
-      "count": false,
-      "lagValues": "1",
-      "sum": false,
-      "concat": false,
-      "lead": false,
-      "concatDistinct": false,
-      "dateDiffUnit": "DAY",
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "lag": false,
-      "leadValues": "1",
-      "stddev": false,
-      "value": true,
-      "leadDiff": false,
-      "first": false
+      "customName": "pct_total_purch",
+      "type": "DOUBLE"
     }
   ],
   "legacyUnboundedWindowStreamBehavior": false,
   "windows": [
     {
-      "windowUpperBound": 0.0,
+      "windowUpperBound": 0,
       "enablePartitioning": false,
       "enableOrdering": false,
       "precedingRows": 0,
@@ -224,12 +250,72 @@
       "orders": [],
       "limitPreceding": false,
       "followingRows": 0,
-      "windowLowerBound": 0.0,
+      "windowLowerBound": 0,
       "enableLimits": false
     }
   ],
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "originalType": "int8",
+            "name": "transaction_id",
+            "type": "bigint"
+          },
+          {
+            "originalType": "int8",
+            "name": "authorized_flag",
+            "type": "bigint"
+          },
+          {
+            "originalType": "text",
+            "name": "purchase_date",
+            "type": "string"
+          },
+          {
+            "originalType": "text",
+            "name": "card_id",
+            "type": "string"
+          },
+          {
+            "originalType": "text",
+            "name": "merchant_id",
+            "type": "string"
+          },
+          {
+            "originalType": "int8",
+            "name": "merchant_category_id",
+            "type": "bigint"
+          },
+          {
+            "originalType": "text",
+            "name": "item_category",
+            "type": "string"
+          },
+          {
+            "originalType": "float8",
+            "name": "purchase_amount",
+            "type": "double"
+          },
+          {
+            "originalType": "int8",
+            "name": "signature_provided",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_amount_sum",
+            "type": "double"
+          },
+          {
+            "name": "pct_total_purch",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
@@ -271,5 +357,6 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "rowNumber": false
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
 }
