@@ -1,0 +1,24 @@
+{
+  "name": "sample",
+  "layout": "WIKI_ARTICLE",
+  "attachments": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1645198867882
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ktgross15"
+    },
+    "lastModifiedOn": 1645198867882
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
