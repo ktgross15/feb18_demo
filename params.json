@@ -175,7 +175,7 @@
       }
     }
   },
-  "name": "Credit Card Fraud",
+  "name": "Credit Card Fraud (testing2)",
   "imgPattern": 1,
   "metrics": {
     "probes": [],
@@ -232,11 +232,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1645199614961
+    "lastModifiedOn": 1645199629278
   },
   "creationTag": {
     "versionNumber": 0,
@@ -245,7 +245,7 @@
     },
     "lastModifiedOn": 1589296263760
   },
-  "shortDesc": "The project *Credit Card Fraud Pat* was created by dataiku-admin on May 12th 2020",
+  "shortDesc": "The project *Credit Card Fraud Pat* was created by dataiku-admin on May 12th 2020\nThe project *CREDIT_CARD_FRAUD_TESTING2* was copied from *CREDITCARDFRAUD* by ktgross15 on Feb 18th 2022",
   "tags": [
     "imported",
     "duplicated"
