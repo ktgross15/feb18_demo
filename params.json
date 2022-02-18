@@ -232,11 +232,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1645199122883
+    "lastModifiedOn": 1645199614961
   },
   "creationTag": {
     "versionNumber": 0,
@@ -247,7 +247,8 @@
   },
   "shortDesc": "The project *Credit Card Fraud Pat* was created by dataiku-admin on May 12th 2020",
   "tags": [
-    "imported"
+    "imported",
+    "duplicated"
   ],
   "customFields": {},
   "checklists": {
