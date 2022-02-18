@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "ktgross15"
     },
-    "lastModifiedOn": 1645142329323
+    "lastModifiedOn": 1645142411207
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,48 +60,47 @@
     "columns": [
       {
         "name": "transaction_id",
-        "type": "bigint",
-        "originalType": "int8"
+        "type": "bigint"
       },
       {
         "name": "authorized_flag",
-        "type": "bigint",
-        "originalType": "int8"
+        "type": "bigint"
       },
       {
         "name": "purchase_date",
-        "type": "string",
-        "originalType": "text"
+        "type": "string"
       },
       {
         "name": "card_id",
-        "type": "string",
-        "originalType": "text"
+        "type": "string"
       },
       {
         "name": "merchant_id",
-        "type": "string",
-        "originalType": "text"
+        "type": "string"
       },
       {
         "name": "merchant_category_id",
-        "type": "bigint",
-        "originalType": "int8"
+        "type": "bigint"
       },
       {
         "name": "item_category",
-        "type": "string",
-        "originalType": "text"
+        "type": "string"
       },
       {
         "name": "purchase_amount",
-        "type": "double",
-        "originalType": "float8"
+        "type": "double"
       },
       {
         "name": "signature_provided",
-        "type": "bigint",
-        "originalType": "int8"
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_amount_sum",
+        "type": "double"
+      },
+      {
+        "name": "pct_total_purch",
+        "type": "double"
       }
     ],
     "userModified": true
